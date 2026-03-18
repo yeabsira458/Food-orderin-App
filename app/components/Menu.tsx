@@ -5,7 +5,7 @@ import Link from "next/link";
 import Carticon from "./Carticon";
 const links = [
   { id: 1, title: "HomePage", url: "/" },
-  { id: 2, title: "Menu", url: "/Menu" },
+  { id: 2, title: "Menu", url: "/menu" },
   { id: 3, title: "Working Hours", url: "/" },
   { id: 4, title: "Contacts", url: "/" },
 ];
