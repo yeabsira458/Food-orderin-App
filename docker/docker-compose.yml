@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: mypassword # Changed dash to underscore
+      POSTGRES_USER: myuser # Optional: defaults to postgres
+      POSTGRES_DB: mydb # Optional: define your DB name here
+    ports:
+      - "5432:5432" # Standard Postgres port
+
+  admin:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
